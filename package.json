@@ -1,0 +1,15 @@
+{
+  "name": "boobsbot",
+  "version": "0.0.1",
+  "description": "Post keyword to slack chat",
+  "main": "app.js",
+  "dependencies": {
+    "forever": "*"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Neskromny/boobsbot.git"
+  },
+  "author": "Neskromny",
+  "license": "MIT"
+}
