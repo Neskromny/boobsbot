@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Post keyword to slack chat",
   "main": "app.js",
-  "start": "forever app.js",
+  "scripts": {
+    "start": "forever app.js"
+  },
   "dependencies": {
     "forever": "*"
     },
