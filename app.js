@@ -1,6 +1,6 @@
 var https = require( 'https' );
 
-var timeArray = [2, 5, 10, 15, 30, 60, 90, 120, 180],
+var timeArray = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55],
 	keyData = [{"text":"boobbies"}, {"text":"cat"}],
 	options = {
 		"hostname": 'hooks.slack.com',
@@ -23,8 +23,7 @@ function getRandom(data) {
 
 function post(key) {
 	postKeyword(key);
-	clearInterval(timer);
-	timer = setInterval(post, getRandom(timeArray) * 60 * 1000, getRandom(keyData));
+	setTimeout(post, getRandom(timeArray) * 60 * 1000 + 1, getRandom(keyData));
 };
 
-timer = setInterval(post, getRandom(timeArray) * 60, getRandom(keyData));
+post(getRandom(keyData));
