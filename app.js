@@ -7,8 +7,7 @@ var timeArray = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55],
 		"path": '/services/T03FGUZ4D/B04D6A2TW/XbMOFCyF1BjhbdHEKYXYSiZC',
 		"method": 'POST',
 		"headers": {"Content-Type": "application/json"}
-	},
-	timer;
+	};
 
 var postKeyword = function( key ) {
 	var req = https.request(options);
