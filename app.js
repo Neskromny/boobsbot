@@ -1,7 +1,7 @@
 var https = require( 'https' );
 
 var timeArray = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55],
-	keyData = [{"text":"boobbies"}, {"text":"cat"}],
+	keyData = [{"text":"boobbies"}, {"text":"boobs"}, {"text":"сиськи"}, {"text":"cat"}],
 	options = {
 		"hostname": 'hooks.slack.com',
 		"path": '/services/T03FGUZ4D/B04D6A2TW/XbMOFCyF1BjhbdHEKYXYSiZC',
