@@ -1,3 +1,5 @@
+"use strict";
+
 var https = require( 'https' );
 
 var timeArray = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55],
@@ -22,7 +24,7 @@ function getRandom(data) {
 
 function post(key) {
 	postKeyword(key);
-	setTimeout(post, getRandom(timeArray) * 60 * 1000 + 1, getRandom(keyData));
+	setTimeout(post, getRandom(timeArray) * 30 * 1000 + 1, getRandom(keyData));
 };
 
 post(getRandom(keyData));
